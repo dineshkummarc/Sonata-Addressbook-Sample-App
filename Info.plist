@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Application</key>
+	<dict>
+		<key>Environment</key>
+		<string>Development</string>
+		<key>Icon file</key>
+		<string>favicon.ico</string>
+		<key>Timezone</key>
+		<string>America/Chicago</string>
+		<key>Title</key>
+		<string>New Application</string>
+	</dict>
+	<key>Configurations</key>
+	<dict>
+		<key>Development</key>
+		<dict>
+			<key>Application URL</key>
+			<string>http://newapplication.site/</string>
+			<key>Resources URL</key>
+			<string>http://newapplication.site/</string>
+			<key>MySQL</key>
+			<dict>
+				<key>database</key>
+				<string>sonata_test</string>
+				<key>host</key>
+				<string>localhost</string>
+				<key>password</key>
+				<string></string>
+				<key>user</key>
+				<string>root</string>
+			</dict>
+			<key>Registry</key>
+			<dict>
+				<key>Base Domain</key>
+				<string>newapplication.site</string>
+				<key>Cookie Path</key>
+				<string>/</string>
+				<key>Cookie Domain</key>
+				<string>.newapplication.site</string>
+				<key>Encryption Key</key>
+				<string>TMixIMCoAToAAA@bJAIAAAAC</string>
+			</dict>
+		</dict>
+		<key>Production</key>
+		<dict/>
+		<key>Test</key>
+		<dict/>
+	</dict>
+</dict>
+</plist>
