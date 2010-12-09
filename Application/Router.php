@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  Router.php
 //  __APPLICATION_NAME__

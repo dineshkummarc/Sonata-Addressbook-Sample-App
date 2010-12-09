@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  SessionsModel.php
 //  __APPLICATION_NAME__

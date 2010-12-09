@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  NewAppDelegate.php
 //  __APPLICATION_NAME__
@@ -49,7 +49,7 @@ class NewAppDelegate extends UIApplication {
     }
     
     public function didReceiveException(STNotification $notification) {
-        parent::didReceiveCriticalError($notification);
+        parent::didReceiveException($notification);
     }
 }
 

@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  CommentsModel.php
 //  __APPLICATION_NAME__

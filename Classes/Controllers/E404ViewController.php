@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  E404ViewController.php
 //  __APPLICATION_NAME__

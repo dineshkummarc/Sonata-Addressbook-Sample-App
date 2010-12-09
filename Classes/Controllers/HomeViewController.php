@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  HomeViewController.php
 //  __APPLICATION_NAME__
@@ -12,11 +12,11 @@ include "Views/HomeView.php";
 class HomeViewController extends UIViewController {
     
     public function indexAction() {
-        /* Creating the view */ 
+        // Creating the view
         $this->view = new HomeView();
         $this->view->initWithDelegate($this);
         
-        /* Render templates in buffer */
+        // Render templates in buffer
         $this->bufferizeTemplates();
         
         $this->presentViewController();

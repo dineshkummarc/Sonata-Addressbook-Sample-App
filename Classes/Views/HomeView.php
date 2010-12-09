@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  HomeView.php
 //  __APPLICATION_NAME__

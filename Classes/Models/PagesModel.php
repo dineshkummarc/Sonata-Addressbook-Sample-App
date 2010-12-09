@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  PagesModel.php
 //  __APPLICATION_NAME__

@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  index.php
 //  __APPLICATION_NAME__

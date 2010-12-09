@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  UsersModel.php
 //  __APPLICATION_NAME__

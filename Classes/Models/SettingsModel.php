@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  SettingsModel.php
 //  __APPLICATION_NAME__

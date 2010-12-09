@@ -1,4 +1,4 @@
-<?
+<?php
 //
 //  Blog_PostsModel.php
 //  __APPLICATION_NAME__
