@@ -18,7 +18,7 @@ class HomeView extends UIView {
              ->setStylesForBrowser(UIViewStylesIE6,
                                    array(UIViewMediaProjection, UIViewMediaScreen),
                                    "styles-ie.css")
-             ->setScripts("jquery/jquery-1.4.2.min.js", "jquery/jquery.tools.min.js", "functions.js")
+             ->setScripts("jquery/jquery-1.4.4.min.js", "functions.js")
              // Uncomment next line if you want to minify scripts
              //->minifyScripts()
              // Uncomment next line if you want to minify styles
