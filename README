@@ -7,4 +7,5 @@ Sonata PHP Framework sample application
 3. Configure web server according to manual:
    http://documentation.sonataphp.com/deployment
 4. Make folder Uploads writeable
-5. Go to addressbook.site in your browser
+5. Create MySQL database "sonata_addressbook" and import "sonata_addressbook.sql" there
+6. Go to addressbook.site in your browser
