@@ -11,20 +11,20 @@
 		<key>Timezone</key>
 		<string>America/Chicago</string>
 		<key>Title</key>
-		<string>New Application</string>
+		<string>Address Book</string>
 	</dict>
 	<key>Configurations</key>
 	<dict>
 		<key>Development</key>
 		<dict>
 			<key>Application URL</key>
-			<string>http://newapplication.site/</string>
+			<string>http://addressbook.site/</string>
 			<key>Resources URL</key>
-			<string>http://newapplication.site/</string>
+			<string>http://addressbook.site/</string>
 			<key>MySQL</key>
 			<dict>
 				<key>database</key>
-				<string>sonata_test</string>
+				<string>sonata_addressbook</string>
 				<key>host</key>
 				<string>localhost</string>
 				<key>password</key>
@@ -35,11 +35,11 @@
 			<key>Registry</key>
 			<dict>
 				<key>Base Domain</key>
-				<string>newapplication.site</string>
+				<string>addressbook.site</string>
 				<key>Cookie Path</key>
 				<string>/</string>
 				<key>Cookie Domain</key>
-				<string>.newapplication.site</string>
+				<string>.addressbook.site</string>
 				<key>Encryption Key</key>
 				<string>TMixIMCoAToAAA@bJAIAAAAC</string>
 			</dict>

@@ -1,0 +1,50 @@
+<form method="post" action="{{location}}" enctype="multipart/form-data">
+    <table class="main">
+        <tbody>
+            <?= UIFlashMessage::get(UIFlashNotice, '<tr><td class="success">', '</td></tr>') ?>
+            <tr>
+                <td><label>Full Name</label>
+                    <input type="text" name="fullname" class="text"
+                           value="<?= STRequest::isPost() ? '{{post:fullname>CFHtml}}' : CFHtml($this->model->fullname) ?>" />
+                    <?php if ($this->errors['fullname']): ?>
+                        <p class="error"><?= $this->errors['fullname'] ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email address</label>
+                    <input type="text" name="email" class="text"
+                           value="<?= STRequest::isPost() ? '{{post:email>CFHtml}}' : CFHtml($this->model->email) ?>" />
+                    <?php if ($this->errors['email']): ?>
+                        <p class="error"><?= $this->errors['email'] ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone Number</label>
+                    <input type="text" name="phone" class="text"
+                           value="<?= STRequest::isPost() ? '{{post:phone>CFHtml}}' : CFHtml($this->model->phone) ?>" />
+                    <?php if ($this->errors['phone']): ?>
+                        <p class="error"><?= $this->errors['phone'] ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Photo</label>
+                    <?php if (($this->action == 'edit') && (is_string($this->model->picture)) && ($this->model->picture != '')): ?>
+                       <img src="/uploads/<?= $this->model->picture ?>" /><br/>
+                    <?php endif; ?>
+                    <input type="file" name="picture" />
+                    <?php if ($this->errors['picture']): ?>
+                        <p class="error"><?= $this->errors['picture'] ?></p>
+                    <?php endif; ?>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right">
+                    <input type="submit" class="submit" value="<?= ($this->action == 'add') ? 'Add Record' : 'Update Record' ?>" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

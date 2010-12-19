@@ -15,7 +15,7 @@ require "SonataFramework/ORM.php";
 require "SonataFramework/UI.php";
 
 function main($argc = 0, $argv = array()) {
-    $retVal = UIApplicationMain($argc, $argv, "NewAppDelegate");
+    $retVal = UIApplicationMain($argc, $argv, "AddressbookAppDelegate");
     return $retVal;
 }
 

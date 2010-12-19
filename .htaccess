@@ -1,0 +1,17 @@
+Options +FollowSymlinks
+
+# BEGIN 
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^static/images/(.*)$ Resources/Images/$1
+RewriteRule ^static/js/(.*)$ Resources/JS/$1
+RewriteRule ^static/css/(.*)$ Resources/CSS/$1
+RewriteRule ^uploads/(.*)$ Uploads/$1
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.php [L]
+</IfModule>
+
+
+# END

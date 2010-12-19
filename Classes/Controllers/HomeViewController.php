@@ -7,14 +7,23 @@
 //  Copyright __COMPANY__ __YEAR__. All rights reserved.
 //
 
-include "Views/HomeView.php";
+include "Views/RootView.php";
+include "Models/RecordsModel.php";
 
 class HomeViewController extends UIViewController {
     
+    public $model;
+    
     public function indexAction() {
         // Creating the view
-        $this->view = new HomeView();
-        $this->view->initWithDelegate($this);
+        $this->view = new RootView();
+        $this->view->initWithDelegate($this)
+                   ->setLayout("Header", "HomeViewTemplate", "Footer")
+                   ->setTitle("Home");
+        
+        // Gettings all values from the model
+        $this->model = new RecordsModel();
+        $this->model->all("?", "ORDER BY fullname ASC");
         
         // Render templates in buffer
         $this->bufferizeTemplates();

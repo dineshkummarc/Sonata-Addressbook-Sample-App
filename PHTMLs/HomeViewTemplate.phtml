@@ -1,15 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-<title>{{pageTitle}} | {{applicationTitle}}</title>
-{{metaDescription}}
-{{metaKeywords}}
-{{favicon}}
-
-{{styles}}
-{{javascripts}}
-</head>
-<body>
-    Sonata application seems to be working properly.
-</body>
-</html>
+        <table class="main">
+                <?= UIFlashMessage::get(UIFlashNotice, '<tr><td colspan="6" class="success">', '</td></tr>') ?>
+                <?php if ($this->model->count() == 0): ?>
+                <tr>
+                    <td colspan="6" style="text-align: center">
+                        No records found.
+                    </td>
+                </tr>
+                <?php else: ?>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Picture</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th style="width: 162px;"></th>
+                        <th style="width: 73px"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($this->model as $record): ?>
+                <tr id="row-<?= $record->id ?>">
+                    <td><?= CFHtml($record->fullname) ?></td>
+                    <td><?= $record->picture ? '<img src="/uploads/'.$record->picture.'" />' : '' ?></td>
+                    <td><?= CFHtml($record->email) ?></td>
+                    <td><?= CFHtml($record->phone) ?></td>
+                    <td><a class="edit" href="/edit/<?= $record->id ?>"></a></td>
+                    <td><a class="delete" rel="<?= $record->id ?>" href="javascript:;"></a></td>
+                </tr>  
+                <?php endforeach;
+                      endif; ?>
+            </tbody>
+        </table>
